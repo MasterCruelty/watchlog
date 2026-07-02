@@ -1,4 +1,4 @@
-# Episodio V7 — TV Time clone
+# Watchlog
 
 TV show & movie tracker. Shows via TVMaze, movies via TMDB.
 
