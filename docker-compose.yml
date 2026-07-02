@@ -1,0 +1,11 @@
+services:
+  episodio:
+    build:
+      context: .
+      args:
+        # read from the .env file in the project root
+        VITE_TMDB_KEY: ${VITE_TMDB_KEY}
+    container_name: episodio
+    ports:
+      - "8080:80"
+    restart: unless-stopped

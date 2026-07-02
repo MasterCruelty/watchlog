@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+
+# env (contains the TMDB key!)
+.env
+.env.local
+.env.*.local
+
+# logs
+npm-debug.log*
+yarn-error.log*
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Capacitor (for the future APK build)
+android/app/build/
+android/.gradle/
+android/local.properties
+ios/
+*.apk
+*.aab
+*.txt
