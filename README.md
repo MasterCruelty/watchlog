@@ -20,6 +20,14 @@ Open the printed URL (also from your phone on the same network: `host: true` is 
 3. `cp .env.example .env` and paste your key
 4. Rebuild: `docker compose up -d --build` (compose passes it to the Vite build)
 
+## GitHub Pages
+Every push to `main` builds and publishes the app via `.github/workflows/deploy.yml`
+(can also be run manually from the Actions tab).
+- Settings > Pages > Source: **GitHub Actions**
+- Settings > Secrets and variables > Actions: add `VITE_TMDB_KEY` (otherwise movie search is disabled)
+
+URL: https://mastercruelty.github.io/watchlog/
+
 ## Docker
 ```bash
 docker compose up -d --build
